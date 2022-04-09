@@ -229,7 +229,7 @@ let studentRollName = {
 let form = document.querySelector("form");
 let output = document.querySelector(".output");
 
-let lastSearchedData = { std_roll: "", std_name: "" };
+let lastSearchedData = { std_roll: "", std_name: "Search your friend" };
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
