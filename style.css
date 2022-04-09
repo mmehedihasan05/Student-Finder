@@ -30,7 +30,7 @@ th {
 
 th {
     text-align: center;
-        padding-left: 0px;
+        padding-left: 8px 0px;
 }
 
 tr:nth-child(even) {
