@@ -79,6 +79,8 @@ tr:nth-child(even) {
 
 
 
+
+
 .searchFiled form {
     display: grid;
     grid-gap: 10px;
@@ -123,6 +125,7 @@ tr:nth-child(even) {
 .output {
     display: grid;
     align-content: center;
+    cursor: pointer;
 }
 
 .output table td {
@@ -137,7 +140,77 @@ tr:nth-child(even) {
     background: none;
 }
 
+.copyText {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 8px
+}
 
+.popup {
+    background: #acddfe;
+    font-size: 14px;
+    padding: 4px 6px;
+
+    width: fit-content;
+    margin: auto;
+
+    opacity: 0;
+
+    /* opacity: 1; */
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    border-radius: 5px;
+}
+
+.popup.animationStart {
+    animation-name: popup_animation;
+    animation-duration: 2.5s;
+    opacity: 1;
+}
+
+@keyframes popup_animation {
+    0% {
+        margin-top: 40px;
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 0;
+    }
+}
+
+.output {
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.output:after {
+    content: "";
+    background: #aba9ad7e;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.output:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
 
 footer{
     text-align: center;
