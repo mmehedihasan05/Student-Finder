@@ -229,6 +229,8 @@ let studentRollName = {
 let form = document.querySelector("form");
 let output = document.querySelector(".output");
 
+let lastSearchedData = { std_roll: "", std_name: "" };
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -240,6 +242,10 @@ form.addEventListener("submit", (e) => {
 
     console.log(inputtedRoll);
 
+    lastSearchedData["std_roll"] = inputtedRoll;
+    let tmpName = studentRollName[inputtedRoll];
+    lastSearchedData["std_name"] = tmpName;
+
     if (studentRollName[inputtedRoll] == undefined) {
         output.innerHTML = `No Studnt Found!`;
     } else {
@@ -247,13 +253,13 @@ form.addEventListener("submit", (e) => {
         <table>
                 <tr>
                     <td>Roll </td>
-                    <td>: ${inputtedRoll}</td>
+                    <td class="outputRoll">: ${inputtedRoll}</td>
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td>: ${studentRollName[inputtedRoll]}</td>
-
+                    <td class="outputName">: ${studentRollName[inputtedRoll]}</td>
                 </tr>
+                <tr><td class="copyText" colspan="2">Click to copy!</td></tr>
             </table>
         `;
     }
@@ -276,3 +282,18 @@ function studentToHtml(start, limit) {
     }
 }
 studentToHtml(1, 230);
+
+output.addEventListener("click", (e) => {
+    let tmpTxt = lastSearchedData.std_roll + "    " + lastSearchedData.std_name;
+    navigator.clipboard.writeText(tmpTxt);
+
+    copyTxtAnimation();
+});
+
+function copyTxtAnimation() {
+    document.querySelector(".popup").classList.add("animationStart");
+
+    setTimeout(() => {
+        document.querySelector(".popup").classList.remove("animationStart");
+    }, 2400);
+}
