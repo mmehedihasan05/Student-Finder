@@ -224,6 +224,7 @@ let studentRollName = {
     228: "Gazi Nahida Jahan",
     229: "Student Information Not Available",
     230: "Md. Mehedi Hasan",
+    231: "Kepayet Sunny",
 };
 
 let form = document.querySelector("form");
@@ -281,7 +282,7 @@ function studentToHtml(start, limit) {
         }
     }
 }
-studentToHtml(1, 230);
+studentToHtml(1, 231);
 
 output.addEventListener("click", (e) => {
     let tmpTxt = lastSearchedData.std_roll + "    " + lastSearchedData.std_name;
