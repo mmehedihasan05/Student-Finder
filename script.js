@@ -222,6 +222,8 @@ let studentRollName = {
     226: "Md Salim Uddin",
     227: "Md. Thanvirul Islam",
     228: "Gazi Nahida Jahan",
+    229: "Student Information Not Available",
+    230: "Md. Mehedi Hasan",
 };
 
 let form = document.querySelector("form");
