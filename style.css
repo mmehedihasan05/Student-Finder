@@ -1,0 +1,161 @@
+body {
+    /* background-color: #1c1c1c; */
+        color: #1f1f1f;
+    /* color: #bababa; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    
+}
+.allStudentData td:nth-child(1) {
+    text-align: center;
+    width: 50px;
+}
+.allStudentData td:nth-child(2) {
+    text-align: left;
+    padding: 8px 0px 8px 30px;
+}
+
+th {
+    text-align: center;
+        padding-left: 0px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.allStudentData .warning {
+    background-color: yellow;
+}
+.allStudentData{
+    display: grid;
+    grid-gap: 20px;
+}
+.allStudentData form{
+    display: inline;
+}
+
+
+
+
+
+/*  */
+.container{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+}
+.container h1{
+    margin-bottom: 0px;
+}
+.expectedStudentData {
+    padding: 10px 10px;
+    border: 1px solid #dddddd;
+
+    display: grid;
+    grid-template-columns: 35% 63%;
+    grid-column-gap: 10px;
+
+}
+
+.expectedStudentData>div {
+    /* background-color: rgb(54, 54, 54); */
+    padding-left: 5%;
+}
+
+
+
+.searchFiled form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+
+
+.searchFiled button {
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    background: #eeeeee;
+    border: 1px solid #dcdcdc;
+}
+
+.searchFiled #roll_input {
+    outline: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #1f1f1f;
+
+    background: #eeeeee;
+    border: 1px solid #dcdcdc;
+}
+
+.searchFiled label {
+    text-align: left;
+}
+
+.searchFiled .submitBtn {
+    display: grid;
+    justify-items: center;
+
+}
+
+#roll_input {
+    width: 90%;
+}
+
+.output {
+    display: grid;
+    align-content: center;
+}
+
+.output table td {
+    border: none;
+}
+
+.output table td:nth-child(1) {
+    width: 20%;
+}
+
+.output table tr:nth-child(even) {
+    background: none;
+}
+
+
+
+footer{
+    text-align: center;
+}
+/* Responsive */
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+}
