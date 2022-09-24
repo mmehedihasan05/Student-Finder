@@ -270,9 +270,14 @@ form.addEventListener("submit", (e) => {
 function studentToHtml(start, limit) {
     let allStudentTable = document.querySelector(".allStudentData table");
     for (let key = start; key <= limit; key++) {
-        if (studentRollName[key] == undefined) {
+        if (studentRollName[key] == undefined && key < 227) {
             let tableRow = document.createElement("tr");
             tableRow.innerHTML = `<td>${key}</td><td><span class="warning">THERE ARE NO STUDENT BY THIS ROLL</span></td>`;
+
+            allStudentTable.appendChild(tableRow);
+        } else if (studentRollName[key] == undefined && key => 227) {
+            let tableRow = document.createElement("tr");
+            tableRow.innerHTML = `<td>${key}</td><td><span class="warning">Student Name Will Insert Soon. (Help me by giving student name)</span></td>`;
 
             allStudentTable.appendChild(tableRow);
         } else {
