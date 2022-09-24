@@ -222,7 +222,6 @@ let studentRollName = {
     226: "Md Salim Uddin",
     227: "Md. Thanvirul Islam",
     228: "Gazi Nahida Jahan",
-    229: "Student Information Not Available",
     230: "Md. Mehedi Hasan",
     231: "Kepayet Sunny",
     242: "MD Saiful Islam",
@@ -275,7 +274,7 @@ function studentToHtml(start, limit) {
             tableRow.innerHTML = `<td>${key}</td><td><span class="warning">THERE ARE NO STUDENT BY THIS ROLL</span></td>`;
 
             allStudentTable.appendChild(tableRow);
-        } else if (studentRollName[key] == undefined && key => 227) {
+        } else if (studentRollName[key] == undefined && key >= 227) {
             let tableRow = document.createElement("tr");
             tableRow.innerHTML = `<td>${key}</td><td><span class="warning">Student Name Will Insert Soon. (Help me by giving student name)</span></td>`;
 
