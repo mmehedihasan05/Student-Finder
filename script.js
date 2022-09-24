@@ -276,7 +276,7 @@ function studentToHtml(start, limit) {
             allStudentTable.appendChild(tableRow);
         } else if (studentRollName[key] == undefined && key >= 227) {
             let tableRow = document.createElement("tr");
-            tableRow.innerHTML = `<td>${key}</td><td><span class="warning">Student Name Will Insert Soon. (Help me by giving student name)</span></td>`;
+            tableRow.innerHTML = `<td>${key}</td><td><span class="warning2">Student Name Will Insert Soon. (Help me by giving student name)</span></td>`;
 
             allStudentTable.appendChild(tableRow);
         } else {
