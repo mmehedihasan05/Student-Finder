@@ -30,7 +30,7 @@ th {
 
 th {
     text-align: center;
-        padding-left: 8px 0px;
+        padding-left: 0px;
 }
 
 tr:nth-child(even) {
@@ -40,6 +40,10 @@ tr:nth-child(even) {
 .allStudentData .warning {
     background-color: yellow;
 }
+.allStudentData .warning2 {
+    background-color: #ff830082
+}
+
 .allStudentData{
     display: grid;
     grid-gap: 20px;
@@ -221,7 +225,6 @@ footer{
         width: 70%;
     }
 }
-
 
 @media only screen and (max-width: 700px) {
     .container {
