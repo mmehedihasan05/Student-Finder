@@ -225,6 +225,7 @@ let studentRollName = {
     230: "Md. Mehedi Hasan",
     231: "Kepayet Sunny",
     242: "MD Saiful Islam",
+    244: "Montahana Nayem | Nayema",
 };
 
 let form = document.querySelector("form");
@@ -287,7 +288,7 @@ function studentToHtml(start, limit) {
         }
     }
 }
-studentToHtml(1, 242);
+studentToHtml(1, 247);
 
 output.addEventListener("click", (e) => {
     let tmpTxt = lastSearchedData.std_roll + "    " + lastSearchedData.std_name;
