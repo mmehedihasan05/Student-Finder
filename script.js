@@ -288,7 +288,7 @@ function studentToHtml(start, limit) {
         }
     }
 }
-studentToHtml(1, 247);
+studentToHtml(1, 244);
 
 output.addEventListener("click", (e) => {
     let tmpTxt = lastSearchedData.std_roll + "    " + lastSearchedData.std_name;
