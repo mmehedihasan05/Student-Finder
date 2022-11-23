@@ -85,7 +85,7 @@ let studentRollName = {
     85: "Sanjida Khanam Nishat",
     86: "Saviha Tasnim",
     87: "MD.Mustafa Kisher",
-    88: "Md. Shaidul Alam",
+    88: "Md. Shaidul Alam (Shåowñ Māalìk)",
     89: "Jannatur Nur Sadia",
     90: "MD. NOWSHAD ALAM",
     91: "Mohammad Shahriyar Islam Emon",
